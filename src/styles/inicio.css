@@ -1,0 +1,83 @@
+.hero {
+  margin: 32px 0;
+  padding: 64px 32px;
+  border-radius: var(--radio);
+  background: linear-gradient(135deg, #0e7490 0%, #0891b2 60%, #22d3ee 100%);
+  color: var(--color-blanco);
+}
+
+.hero-texto {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 28px;
+  opacity: 0.95;
+}
+
+.hero .boton {
+  background-color: var(--color-acento);
+  color: var(--color-texto);
+}
+
+.hero .boton:hover {
+  background-color: #fbbf24;
+}
+
+.pasos h2 {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.pasos-grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.paso {
+  padding: 24px;
+}
+
+.paso-numero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  font-weight: 700;
+}
+
+.paso h3 {
+  margin-bottom: 8px;
+}
+
+.paso p {
+  color: var(--color-texto-suave);
+}
+
+@media (max-width: 900px) {
+  .pasos-grilla {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
